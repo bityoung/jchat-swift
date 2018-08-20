@@ -50,7 +50,11 @@ class JCRegisterInfoViewController: UIViewController {
     private lazy var registerButton: UIButton = {
         var button = UIButton()
         button.backgroundColor = UIColor(netHex: 0x2DD0CF)
-        button.frame = CGRect(x: 38, y: 64 + 40 + 80 + 40 + 40 + 38, width: self.view.width - 76, height: 40)
+        let x : CGFloat = 38
+        let y : CGFloat = 64 + 40 + 80 + 40 + 40 + 38
+        let w : CGFloat = self.view.frame.size.width - 76.0
+        let h : CGFloat = 40
+        button.frame = CGRect(x: x, y: y, width: w, height: h)
         button.setTitle("完成", for: .normal)
         button.layer.cornerRadius = 3.0
         button.layer.masksToBounds = true

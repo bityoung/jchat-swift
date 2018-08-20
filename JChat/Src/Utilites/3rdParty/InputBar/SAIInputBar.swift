@@ -737,7 +737,7 @@ extension SAIInputBar: UIKeyInput {
     open var isSecureTextEntry: Bool {
         @objc(setSecureTextEntry:) 
         set { return _inputAccessoryView.textField.isSecureTextEntry = newValue }
-        get { return _inputAccessoryView.textField.isSecureTextEntry }
+        @objc(isSecureTextEntry) get { return _inputAccessoryView.textField.isSecureTextEntry }
     }
 }
 
