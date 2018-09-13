@@ -1240,6 +1240,7 @@
 				B43BA3721E8A2F0000565DB3 /* Resources */,
 				70DD9288AA08E1D9BCFEDE17 /* [CP] Embed Pods Frameworks */,
 				0B5A806B71DCC9E2A0842D61 /* [CP] Copy Pods Resources */,
+				25AFAEF1214A3FA5002ABEF8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1258,6 +1259,8 @@
 				B43BA3841E8A2F0000565DB3 /* Sources */,
 				B43BA3851E8A2F0000565DB3 /* Frameworks */,
 				B43BA3861E8A2F0000565DB3 /* Resources */,
+				19CAF957A71230D94A2DB5A1 /* [CP] Embed Pods Frameworks */,
+				EEB7ED28E5EF9E868A8A64C9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1277,6 +1280,8 @@
 				B43BA38F1E8A2F0000565DB3 /* Sources */,
 				B43BA3901E8A2F0000565DB3 /* Frameworks */,
 				B43BA3911E8A2F0000565DB3 /* Resources */,
+				3B7468B2765C9C336FFDD5D5 /* [CP] Embed Pods Frameworks */,
+				78DE99B9A4CB7C1208E02309 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1402,6 +1407,49 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JChat/Pods-JChat-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		19CAF957A71230D94A2DB5A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JChatTests/Pods-JChatTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25AFAEF1214A3FA5002ABEF8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $CONFIGURATION == Release ]; then\necho \"Bumping build number...\"\nplist=${PROJECT_DIR}/${INFOPLIST_FILE}\n\n#increment the build number (ie 115 to 116)\nbuildnum=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${plist}\")\nif [[ \"${buildnum}\" == \"\" ]]; then\necho \"No build number in $plist\"\nexit 2\nfi\n\nbuildnum=$(expr $buildnum + 1)\n/usr/libexec/Plistbuddy -c \"Set CFBundleVersion $buildnum\" \"${plist}\"\necho \"Bumped build number to $buildnum\"\n\nelse\necho $CONFIGURATION \" build - Not bumping build number.\"\n\nfi";
+		};
+		3B7468B2765C9C336FFDD5D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JChatUITests/Pods-JChatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		70DD9288AA08E1D9BCFEDE17 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1430,6 +1478,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JChat/Pods-JChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78DE99B9A4CB7C1208E02309 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JChatUITests/Pods-JChatUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A0A5931D9F1014922BC7FEF8 /* [CP] Check Pods Manifest.lock */ = {
@@ -1484,6 +1547,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEB7ED28E5EF9E868A8A64C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JChatTests/Pods-JChatTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1765,6 +1843,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1812,6 +1891,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1841,7 +1921,7 @@
 					"-ObjC",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D READ_VERSION";
-				PRODUCT_BUNDLE_IDENTIFIER = com.swtcwallet.otc.service;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jingtum.Jingtum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/JChat/JChat-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -1873,7 +1953,7 @@
 					"-ObjC",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D READ_VERSION";
-				PRODUCT_BUNDLE_IDENTIFIER = com.swtcwallet.otc.service;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jingtum.Jingtum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/JChat/JChat-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

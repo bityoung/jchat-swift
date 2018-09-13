@@ -49,7 +49,7 @@ public extension SAIInputBar {
             _barItem("kb:emoticon", "YH_KB_Emotion", "YH_KB_Emotion"),
             _barItem("kb:toolbox", "YH_KB_More", "YH_KB_More"),
         ]
-        setBarItems(lbs, atPosition: .left)
+//        setBarItems(lbs, atPosition: .left)
         setBarItems(rbs, atPosition: .right)
     }
     private func _setupForValue1() {

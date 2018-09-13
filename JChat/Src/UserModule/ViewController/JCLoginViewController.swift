@@ -40,7 +40,7 @@ class JCLoginViewController: UIViewController {
         let title = UILabel(frame: CGRect(x: self.view.centerX - 10, y: 20, width: 200, height: 44))
         title.font = UIFont.systemFont(ofSize: 18)
         title.textColor = .white
-        title.text = "JChat"
+        title.text = "OTC客服"
         view.addSubview(title)
         
         var rightButton = UIButton(frame: CGRect(x: view.width - 50 - 15, y: 20 + 7, width: 50, height: 30))
@@ -148,7 +148,7 @@ class JCLoginViewController: UIViewController {
     
     //MARK: - private func 
     private func _init() {
-        self.title = "JChat"
+        self.title = "OTC客服"
         view.backgroundColor = .white
         UIApplication.shared.setStatusBarStyle(.default, animated: false)
         automaticallyAdjustsScrollViewInsets = false
