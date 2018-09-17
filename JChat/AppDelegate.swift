@@ -13,7 +13,7 @@ import JMessage
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let JMAPPKEY = "afaf79803df4a32db877a193"
+    let JMAPPKEY = "f62a4ab6924048c1f4ef1062"
     // 百度地图 SDK AppKey，请自行申请你对应的 AppKey
     let BMAPPKEY = ""
     
@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        }
         if #available(iOS 11.0, *) {
             UITableView.appearance().estimatedRowHeight = 0
-            UITableView.appearance().estimatedSectionFooterHeight = 0
+            UITableView.appearance().estimatedSectionFooterHeight = 0   
             UITableView.appearance().estimatedSectionHeaderHeight = 0
         }
 

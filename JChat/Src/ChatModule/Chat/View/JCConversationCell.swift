@@ -137,7 +137,7 @@ class JCConversationCell: JCTableViewCell {
 
         if !isGroup {
             let user = conversation.target as? JMSGUser
-            titleLabel.text = user?.displayName() ?? ""
+            titleLabel.text = user?.nickname ?? ""
             user?.thumbAvatarData { (data, username, error) in
                 guard let imageData = data else {
                     self.avatorView.image = self.userDefaultIcon

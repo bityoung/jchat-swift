@@ -1921,7 +1921,7 @@
 					"-ObjC",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D READ_VERSION";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jingtum.Jingtum;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swtcwallet.otc.service;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/JChat/JChat-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -1953,7 +1953,7 @@
 					"-ObjC",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D READ_VERSION";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jingtum.Jingtum;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swtcwallet.otc.service;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/JChat/JChat-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

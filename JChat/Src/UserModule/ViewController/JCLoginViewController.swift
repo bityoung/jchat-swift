@@ -37,17 +37,17 @@ class JCLoginViewController: UIViewController {
     fileprivate lazy var headerView: UIView = {
         let view = UIView(frame: CGRect(x: 0, y: -64, width: self.view.width, height: 64))
         view.backgroundColor = UIColor(netHex: 0x2DD0CF)
-        let title = UILabel(frame: CGRect(x: self.view.centerX - 10, y: 20, width: 200, height: 44))
+        let title = UILabel(frame: CGRect(x: self.view.centerX - 30, y: 20, width: 200, height: 44))
         title.font = UIFont.systemFont(ofSize: 18)
         title.textColor = .white
         title.text = "OTC客服"
         view.addSubview(title)
         
-        var rightButton = UIButton(frame: CGRect(x: view.width - 50 - 15, y: 20 + 7, width: 50, height: 30))
-        rightButton.setTitle("新用户", for: .normal)
-        rightButton.titleLabel?.font = UIFont.systemFont(ofSize: 16)
-        rightButton.addTarget(self, action: #selector(_clickRegisterButton), for: .touchUpInside)
-        view.addSubview(rightButton)
+//        var rightButton = UIButton(frame: CGRect(x: view.width - 50 - 15, y: 20 + 7, width: 50, height: 30))
+//        rightButton.setTitle("新用户", for: .normal)
+//        rightButton.titleLabel?.font = UIFont.systemFont(ofSize: 16)
+//        rightButton.addTarget(self, action: #selector(_clickRegisterButton), for: .touchUpInside)
+//        view.addSubview(rightButton)
         
         return view
     }()
@@ -91,6 +91,7 @@ class JCLoginViewController: UIViewController {
         button.titleLabel?.font = UIFont.systemFont(ofSize: 12)
         button.setTitleColor(UIColor(netHex: 0x2DD0CF), for: .normal)
         button.addTarget(self, action: #selector(_clickRegisterButton), for: .touchUpInside)
+        button.isHidden = true
         return button
     }()
     
@@ -111,6 +112,7 @@ class JCLoginViewController: UIViewController {
         label.text = "还没有账号？"
         label.textColor = UIColor(netHex: 0x999999)
         label.font = UIFont.systemFont(ofSize: 12)
+        label.isHidden = true
         return label
     }()
     

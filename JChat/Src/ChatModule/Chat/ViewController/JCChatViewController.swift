@@ -58,8 +58,11 @@ class JCChatViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardFrameChanged(_:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
-        if let group = conversation.target as? JMSGGroup {
-            self.title = group.displayName()
+//        if let group = conversation.target as? JMSGGroup {
+//            self.title = group.displayName()
+//        } else
+        if let user = conversation.target as? JMSGUser {
+            self.title = user.nickname
         }
         navigationController?.interactivePopGestureRecognizer?.delegate = self
     }
@@ -176,7 +179,7 @@ class JCChatViewController: UIViewController {
     private func _init() {
         myAvator = UIImage.getMyAvator()
         isGroup = conversation.ex.isGroup
-        _updateTitle()
+//        _updateTitle()
         view.backgroundColor = .white
         JMessage.add(self, with: conversation)
         _setupNavigation()
