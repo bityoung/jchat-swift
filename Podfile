@@ -2,17 +2,17 @@
 # platform :ios, '9.0'
 
 target 'JChat' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
-  pod 'MBProgressHUD', '~> 1.0.0'
-  pod 'YHPopupView'
-  pod 'YHPhotoKit'
-  pod 'MJRefresh', '~> 3.1.12'
-  pod 'FMDB', '~> 2.6.2'
-  pod 'BaiduMapKit', '~> 3.3.2'
-  pod 'JMessage', '~> 3.3.0’
-  pod 'RxSwift', '~> 3.6.1'
-  pod 'RxCocoa', '~> 3.6.1'
+    # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+    use_frameworks!
+    pod 'MBProgressHUD', '~> 1.0.0'
+    pod 'YHPopupView'
+    pod 'YHPhotoKit'
+    pod 'MJRefresh', '~> 3.1.12'
+    pod 'FMDB', '~> 2.6.2'
+    pod 'BaiduMapKit', '~> 3.3.2'
+    pod 'JMessage', '~> 3.3.0’
+    pod 'RxSwift', '~> 3.6.1'
+    pod 'RxCocoa', '~> 3.6.1'
 
   # Pods for JChat
 
