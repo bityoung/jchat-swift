@@ -131,7 +131,7 @@
 		B43F70311EA87F7C0076D5AF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B43F70301EA87F7C0076D5AF /* CoreLocation.framework */; };
 		B43F70331EA87F910076D5AF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B43F70321EA87F910076D5AF /* QuartzCore.framework */; };
 		B43F70351EA87FA10076D5AF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B43F70341EA87FA10076D5AF /* OpenGLES.framework */; };
-		B43F70371EA880280076D5AF /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B43F70361EA880280076D5AF /* libstdc++.6.0.9.tbd */; };
+		B43F70371EA880280076D5AF /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B43F70361EA880280076D5AF /* libstdc++.6.0.9.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
 		B43F70481EA883DA0076D5AF /* JCAddMapViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B43F703A1EA883DA0076D5AF /* JCAddMapViewController.mm */; };
 		B43F704A1EA883DA0076D5AF /* icon_baidu_marker.png in Resources */ = {isa = PBXBuildFile; fileRef = B43F703D1EA883DA0076D5AF /* icon_baidu_marker.png */; };
 		B43F704B1EA883DA0076D5AF /* jiantou2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B43F703E1EA883DA0076D5AF /* jiantou2@2x.png */; };
