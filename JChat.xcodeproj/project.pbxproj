@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A4A7E2CF0C56EA64144D6F1 /* Pods_JChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5229541B366E492E890423 /* Pods_JChatUITests.framework */; };
+		2506F5E62176E24400D4FC6B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2506F5E52176E24400D4FC6B /* libc++.tbd */; };
 		650AA8941F8A6FF400D28338 /* JMSGOptionalContent+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650AA8931F8A6FF400D28338 /* JMSGOptionalContent+.swift */; };
 		6517E08B1F90BBD9005A4B21 /* UISearchBar+JChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517E08A1F90BBD9005A4B21 /* UISearchBar+JChat.swift */; };
 		651F362E1F53C14C00C9AAFD /* DLLRUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 651F361F1F53C14C00C9AAFD /* DLLRUCache.m */; };
@@ -131,14 +132,6 @@
 		B43F70311EA87F7C0076D5AF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B43F70301EA87F7C0076D5AF /* CoreLocation.framework */; };
 		B43F70331EA87F910076D5AF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B43F70321EA87F910076D5AF /* QuartzCore.framework */; };
 		B43F70351EA87FA10076D5AF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B43F70341EA87FA10076D5AF /* OpenGLES.framework */; };
-		B43F70371EA880280076D5AF /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B43F70361EA880280076D5AF /* libstdc++.6.0.9.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
-		B43F70481EA883DA0076D5AF /* JCAddMapViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B43F703A1EA883DA0076D5AF /* JCAddMapViewController.mm */; };
-		B43F704A1EA883DA0076D5AF /* icon_baidu_marker.png in Resources */ = {isa = PBXBuildFile; fileRef = B43F703D1EA883DA0076D5AF /* icon_baidu_marker.png */; };
-		B43F704B1EA883DA0076D5AF /* jiantou2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B43F703E1EA883DA0076D5AF /* jiantou2@2x.png */; };
-		B43F704C1EA883DA0076D5AF /* 定位1.png in Resources */ = {isa = PBXBuildFile; fileRef = B43F703F1EA883DA0076D5AF /* 定位1.png */; };
-		B43F704D1EA883DA0076D5AF /* 定位2.png in Resources */ = {isa = PBXBuildFile; fileRef = B43F70401EA883DA0076D5AF /* 定位2.png */; };
-		B43F70501EA883DA0076D5AF /* AddMapTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B43F70461EA883DA0076D5AF /* AddMapTableViewCell.m */; };
-		B43F70511EA883DA0076D5AF /* AddMapTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B43F70471EA883DA0076D5AF /* AddMapTableViewCell.xib */; };
 		B440125B1EC5A5180049C5D8 /* JCRegisterInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B440125A1EC5A5180049C5D8 /* JCRegisterInfoViewController.swift */; };
 		B4451B0E1F1DF86100C0E889 /* JCAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4451B0D1F1DF86100C0E889 /* JCAlertView.swift */; };
 		B4459B511EF8BDF500AF7993 /* UIImage+JChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4459B501EF8BDF500AF7993 /* UIImage+JChat.swift */; };
@@ -248,6 +241,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2506F5E52176E24400D4FC6B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		25107AB0699A2A0F65F5F140 /* Pods-JChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JChatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JChatUITests/Pods-JChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D9B8B0D7A37CB5A64B1F049 /* Pods-JChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JChatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JChatTests/Pods-JChatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		30157DB80524A6BCE2DEFB37 /* Pods-JChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JChat/Pods-JChat.debug.xcconfig"; sourceTree = "<group>"; };
@@ -394,15 +388,6 @@
 		B43F70321EA87F910076D5AF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B43F70341EA87FA10076D5AF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		B43F70361EA880280076D5AF /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
-		B43F70391EA883DA0076D5AF /* JCAddMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCAddMapViewController.h; sourceTree = "<group>"; };
-		B43F703A1EA883DA0076D5AF /* JCAddMapViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JCAddMapViewController.mm; sourceTree = "<group>"; };
-		B43F703D1EA883DA0076D5AF /* icon_baidu_marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_baidu_marker.png; sourceTree = "<group>"; };
-		B43F703E1EA883DA0076D5AF /* jiantou2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jiantou2@2x.png"; sourceTree = "<group>"; };
-		B43F703F1EA883DA0076D5AF /* 定位1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "定位1.png"; sourceTree = "<group>"; };
-		B43F70401EA883DA0076D5AF /* 定位2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "定位2.png"; sourceTree = "<group>"; };
-		B43F70451EA883DA0076D5AF /* AddMapTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMapTableViewCell.h; sourceTree = "<group>"; };
-		B43F70461EA883DA0076D5AF /* AddMapTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMapTableViewCell.m; sourceTree = "<group>"; };
-		B43F70471EA883DA0076D5AF /* AddMapTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddMapTableViewCell.xib; sourceTree = "<group>"; };
 		B440125A1EC5A5180049C5D8 /* JCRegisterInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCRegisterInfoViewController.swift; sourceTree = "<group>"; };
 		B4451B0D1F1DF86100C0E889 /* JCAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCAlertView.swift; sourceTree = "<group>"; };
 		B4459B501EF8BDF500AF7993 /* UIImage+JChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+JChat.swift"; sourceTree = "<group>"; };
@@ -503,7 +488,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B43F70371EA880280076D5AF /* libstdc++.6.0.9.tbd in Frameworks */,
+				2506F5E62176E24400D4FC6B /* libc++.tbd in Frameworks */,
 				B43BA43F1E8A30C400565DB3 /* CoreTelephony.framework in Frameworks */,
 				B43BA4391E8A30A900565DB3 /* SystemConfiguration.framework in Frameworks */,
 				B43BA4351E8A309300565DB3 /* Security.framework in Frameworks */,
@@ -863,7 +848,6 @@
 		B43BA3BB1E8A2FF500565DB3 /* Input */ = {
 			isa = PBXGroup;
 			children = (
-				B43F70381EA883DA0076D5AF /* Map */,
 				B43BA3BF1E8A2FF500565DB3 /* InputView */,
 			);
 			path = Input;
@@ -1081,38 +1065,6 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
-		B43F70381EA883DA0076D5AF /* Map */ = {
-			isa = PBXGroup;
-			children = (
-				B43F70391EA883DA0076D5AF /* JCAddMapViewController.h */,
-				B43F703A1EA883DA0076D5AF /* JCAddMapViewController.mm */,
-				B43F703C1EA883DA0076D5AF /* Resources */,
-				B43F70441EA883DA0076D5AF /* View */,
-			);
-			path = Map;
-			sourceTree = "<group>";
-		};
-		B43F703C1EA883DA0076D5AF /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				B43F703D1EA883DA0076D5AF /* icon_baidu_marker.png */,
-				B43F703E1EA883DA0076D5AF /* jiantou2@2x.png */,
-				B43F703F1EA883DA0076D5AF /* 定位1.png */,
-				B43F70401EA883DA0076D5AF /* 定位2.png */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		B43F70441EA883DA0076D5AF /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B43F70451EA883DA0076D5AF /* AddMapTableViewCell.h */,
-				B43F70461EA883DA0076D5AF /* AddMapTableViewCell.m */,
-				B43F70471EA883DA0076D5AF /* AddMapTableViewCell.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		B47FEA5D1EA4B3CE00AF1732 /* ImageBrowser */ = {
 			isa = PBXGroup;
 			children = (
@@ -1205,6 +1157,7 @@
 		DDA5C80485C5FFA2C3776F21 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2506F5E52176E24400D4FC6B /* libc++.tbd */,
 				B43F70361EA880280076D5AF /* libstdc++.6.0.9.tbd */,
 				B43F70341EA87FA10076D5AF /* OpenGLES.framework */,
 				B43F70321EA87F910076D5AF /* QuartzCore.framework */,
@@ -1353,21 +1306,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B43F704D1EA883DA0076D5AF /* 定位2.png in Resources */,
-				B43F704B1EA883DA0076D5AF /* jiantou2@2x.png in Resources */,
 				B47FEA631EA4B3CE00AF1732 /* JCMessageImageCollectionViewCell.xib in Resources */,
 				6541FC821F78A9E700C351CE /* defaultTheme.bundle in Resources */,
-				B43F704A1EA883DA0076D5AF /* icon_baidu_marker.png in Resources */,
 				6541FC831F78A9E700C351CE /* blackTheme.bundle in Resources */,
 				B4DB28BF1E9F7B6C0024AB65 /* yh_image_no_picked@3x.png in Resources */,
 				B4DB28BE1E9F7B6C0024AB65 /* yh_image_no_picked@2x.png in Resources */,
-				B43F704C1EA883DA0076D5AF /* 定位1.png in Resources */,
 				B43BA37F1E8A2F0000565DB3 /* Assets.xcassets in Resources */,
 				B403F4331EBAF24F00011630 /* addressCode in Resources */,
 				B4DB28C01E9F7B6C0024AB65 /* yh_image_picked@2x.png in Resources */,
 				B4DB28C11E9F7B6C0024AB65 /* yh_image_picked@3x.png in Resources */,
 				B43BA3F41E8A2FF500565DB3 /* emoticons.bundle in Resources */,
-				B43F70511EA883DA0076D5AF /* AddMapTableViewCell.xib in Resources */,
 				B403F4341EBAF24F00011630 /* area.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1625,7 +1573,6 @@
 				B4DF212E1E9B5065005E62AA /* JCMessageTimeLineContentView.swift in Sources */,
 				65A46F361F6A228600FBF416 /* UnreadListViewController.swift in Sources */,
 				B43BA40E1E8A2FF500565DB3 /* JCUserInfoCell.swift in Sources */,
-				B43F70501EA883DA0076D5AF /* AddMapTableViewCell.m in Sources */,
 				B43BA4211E8A2FF500565DB3 /* NSLayoutConstraint+JChat.swift in Sources */,
 				B4FFA4171F1764C300585B35 /* KILabel.m in Sources */,
 				65E081711F7D49460088730D /* UserDefaultValidationService.swift in Sources */,
@@ -1752,7 +1699,6 @@
 				B46BA5511E9609F200A94B18 /* JCTableViewCell.swift in Sources */,
 				651F36311F53C14C00C9AAFD /* DLFixedTabbarView.m in Sources */,
 				B401E5061E8B4A6C003ABE08 /* JCSignatureViewController.swift in Sources */,
-				B43F70481EA883DA0076D5AF /* JCAddMapViewController.mm in Sources */,
 				6541FC841F78A9E700C351CE /* ThemeManager.swift in Sources */,
 				B464C62D1EC05F9E00AE41B5 /* JCMoreResultViewController.swift in Sources */,
 				B43BA4081E8A2FF500565DB3 /* JCEmoticonPage.swift in Sources */,

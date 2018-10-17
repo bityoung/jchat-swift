@@ -693,16 +693,17 @@ extension JCChatViewController: SAIToolboxInputViewDataSource, SAIToolboxInputVi
         case "page:video_s":
             present(videoPicker, animated: true, completion: nil)
         case "page:location":
-            let vc = JCAddMapViewController()
-            vc.addressBlock = { (dict: Dictionary?) in
-                if dict != nil {
-                    let lon = Float(dict?["lon"] as! String)
-                    let lat = Float(dict?["lat"] as! String)
-                    let address = dict?["address"] as! String
-                    self.send(address: address, lon: NSNumber(value: lon!), lat: NSNumber(value: lat!))
-                }
-            }
-            navigationController?.pushViewController(vc, animated: true)
+//            let vc = JCAddMapViewController()
+//            vc.addressBlock = { (dict: Dictionary?) in
+//                if dict != nil {
+//                    let lon = Float(dict?["lon"] as! String)
+//                    let lat = Float(dict?["lat"] as! String)
+//                    let address = dict?["address"] as! String
+//                    self.send(address: address, lon: NSNumber(value: lon!), lat: NSNumber(value: lat!))
+//                }
+//            }
+//            navigationController?.pushViewController(vc, animated: true)
+            break
         case "page:businessCard":
             let vc = FriendsBusinessCardViewController()
             vc.conversation = conversation
@@ -765,11 +766,11 @@ extension JCChatViewController: JCMessageDelegate {
     }
 
     func message(message: JCMessageType, location address: String?, lat: Double, lon: Double) {
-        let vc = JCAddMapViewController()
-        vc.isOnlyShowMap = true
-        vc.lat = lat
-        vc.lon = lon
-        navigationController?.pushViewController(vc, animated: true)
+//        let vc = JCAddMapViewController()
+//        vc.isOnlyShowMap = true
+//        vc.lat = lat
+//        vc.lon = lon
+//        navigationController?.pushViewController(vc, animated: true)
     }
     
     func message(message: JCMessageType, image: UIImage?) {
